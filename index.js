@@ -11,7 +11,7 @@ const toPromise = require("./lib/promise/toPromise");
 
 const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDeep");
 
-modules.exports = {
+module.exports = {
   isExist,
   isInitialized,
   isValidNumber,
