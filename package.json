@@ -1,6 +1,6 @@
 {
   "name": "@thedolphinos/utility4js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": " A utility library for JavaScript.",
   "keywords": [
     "dolphinos",
@@ -26,6 +26,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@thedolphinos/error4js": "^0.2.0",
     "lodash": "^4.17.19"
   },
   "devDependencies": {}
