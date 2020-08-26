@@ -11,11 +11,14 @@ const toPromise = require("./lib/promise/toPromise");
 
 const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDeep");
 
+const isObjectId = require("./lib/db/isObjectId");
+
 module.exports = {
   isExist,
   isInitialized,
   isValidNumber,
   isValidDate,
   toPromise,
-  traverseRequireExecuteDeep
+  traverseRequireExecuteDeep,
+  isObjectId
 };
