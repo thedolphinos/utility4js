@@ -15,6 +15,8 @@ const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDee
 
 const isObjectId = require("./lib/db/isObjectId");
 
+const init = require("./lib/variable/init");
+
 module.exports = {
   isExist,
   isInitialized,
@@ -23,5 +25,6 @@ module.exports = {
   toPromise,
   assignIfExist,
   traverseRequireExecuteDeep,
-  isObjectId
+  isObjectId,
+  init
 };
