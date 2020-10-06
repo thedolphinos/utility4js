@@ -1,5 +1,3 @@
-"use strict";
-
 const isExist = require("./lib/core/isExist");
 const isInitialized = require("./lib/core/isInitialized");
 
@@ -20,11 +18,18 @@ const init = require("./lib/variable/init");
 module.exports = {
   isExist,
   isInitialized,
+
   isValidNumber,
+
   isValidDate,
+
   toPromise,
+
   assignIfExist,
+
   traverseRequireExecuteDeep,
+
   isObjectId,
+
   init
 };
