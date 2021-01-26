@@ -14,6 +14,7 @@ const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDee
 const isObjectId = require("./lib/db/isObjectId");
 const isValidId = require("./lib/db/isValidId");
 const isSameIds = require("./lib/db/isSameIds");
+const toObjectId = require("./lib/db/toObjectId");
 
 const init = require("./lib/variable/init");
 
@@ -33,7 +34,7 @@ module.exports = {
 
   isObjectId,
   isValidId,
-  isSameIds,
+  toObjectId,
 
   init
 };
