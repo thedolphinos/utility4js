@@ -34,6 +34,7 @@ module.exports = {
 
   isObjectId,
   isValidId,
+  isSameIds,
   toObjectId,
 
   init
