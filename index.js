@@ -17,6 +17,9 @@ const isSameIds = require("./lib/db/isSameIds");
 const toObjectId = require("./lib/db/toObjectId");
 
 const init = require("./lib/variable/init");
+const removeNotExistedPropertiesDeeply = require("./lib/variable/removeNotExistedPropertiesDeeply");
+const removeNotExistedPropertiesFromObjectDeeply = require("./lib/variable/removeNotExistedPropertiesFromObjectDeeply");
+const removeNotExistedPropertiesFromArrayDeeply = require("./lib/variable/removeNotExistedPropertiesFromArrayDeeply");
 
 module.exports = {
   isExist,
@@ -37,5 +40,8 @@ module.exports = {
   isSameIds,
   toObjectId,
 
-  init
+  init,
+  removeNotExistedPropertiesDeeply,
+  removeNotExistedPropertiesFromObjectDeeply,
+  removeNotExistedPropertiesFromArrayDeeply
 };
