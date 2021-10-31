@@ -9,6 +9,9 @@ const toPromise = require("./lib/promise/toPromise");
 
 const assignIfExist = require("./lib/object/assignIfExist");
 
+const isValidEnumDefinition = require("./lib/enum/isValidEnumDefinition");
+const isValidEnumValue = require("./lib/enum/isValidEnumValue");
+
 const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDeep");
 
 const isObjectId = require("./lib/db/isObjectId");
@@ -17,7 +20,11 @@ const isSameIds = require("./lib/db/isSameIds");
 const toObjectId = require("./lib/db/toObjectId");
 
 const init = require("./lib/variable/init");
-const removeNotExistedProperties = require("./lib/variable/removeNotExistedProperties");
+const {
+  removeNotExistedPropertiesDeeply,
+  removeNotExistedPropertiesFromObjectDeeply,
+  removeNotExistedPropertiesFromArrayDeeply
+} = require("./lib/variable/removeNotExistedProperties");
 
 module.exports = {
   isExist,
@@ -31,6 +38,9 @@ module.exports = {
 
   assignIfExist,
 
+  isValidEnumDefinition,
+  isValidEnumValue,
+
   traverseRequireExecuteDeep,
 
   isObjectId,
@@ -39,7 +49,7 @@ module.exports = {
   toObjectId,
 
   init,
-  removeNotExistedPropertiesDeeply: removeNotExistedProperties.removeNotExistedPropertiesDeeply,
-  removeNotExistedPropertiesFromObjectDeeply:removeNotExistedProperties.removeNotExistedPropertiesFromObjectDeeply,
-  removeNotExistedPropertiesFromArrayDeeply:removeNotExistedProperties.removeNotExistedPropertiesFromArrayDeeply
+  removeNotExistedPropertiesDeeply,
+  removeNotExistedPropertiesFromObjectDeeply,
+  removeNotExistedPropertiesFromArrayDeeply
 };
