@@ -21,6 +21,11 @@ const toObjectId = require("./lib/db/toObjectId");
 
 const init = require("./lib/variable/init");
 const {
+  removePropertiesDeeply,
+  removePropertiesFromObjectDeeply,
+  removePropertiesFromArrayDeeply
+} = require("./lib/variable/removeProperties");
+const {
   removeNotExistedPropertiesDeeply,
   removeNotExistedPropertiesFromObjectDeeply,
   removeNotExistedPropertiesFromArrayDeeply
@@ -49,6 +54,9 @@ module.exports = {
   toObjectId,
 
   init,
+  removePropertiesDeeply,
+  removePropertiesFromObjectDeeply,
+  removePropertiesFromArrayDeeply,
   removeNotExistedPropertiesDeeply,
   removeNotExistedPropertiesFromObjectDeeply,
   removeNotExistedPropertiesFromArrayDeeply
