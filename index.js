@@ -11,6 +11,7 @@ const assignIfExist = require("./lib/object/assignIfExist");
 
 const isValidEnumDefinition = require("./lib/enum/isValidEnumDefinition");
 const isValidEnumValue = require("./lib/enum/isValidEnumValue");
+const toEnum = require("./lib/enum/toEnum");
 
 const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDeep");
 
@@ -45,6 +46,7 @@ module.exports = {
 
   isValidEnumDefinition,
   isValidEnumValue,
+  toEnum,
 
   traverseRequireExecuteDeep,
 

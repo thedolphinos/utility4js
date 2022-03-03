@@ -1,6 +1,6 @@
 {
   "name": "@thedolphinos/utility4js",
-  "version": "0.23.1",
+  "version": "0.24.0",
   "description": "A utility library for JavaScript.",
   "keywords": [
     "dolphinos",
@@ -28,6 +28,6 @@
   "dependencies": {
     "@thedolphinos/error4js": "^0.28.0",
     "lodash": "^4.17.21",
-    "mongodb": "^4.2.2"
+    "mongodb": "^4.4.0"
   }
 }
