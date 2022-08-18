@@ -1,6 +1,6 @@
 {
   "name": "@thedolphinos/utility4js",
-  "version": "0.25.0",
+  "version": "0.25.1",
   "description": "A utility library for JavaScript.",
   "keywords": [
     "dolphinos",
@@ -26,8 +26,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@thedolphinos/error4js": "^0.28.0",
+    "@thedolphinos/error4js": "^0.29.0",
     "lodash": "^4.17.21",
-    "mongodb": "^4.4.0"
+    "mongodb": "^4.8.1"
   }
 }
