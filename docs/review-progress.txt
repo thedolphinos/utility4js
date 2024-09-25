@@ -10,6 +10,7 @@ You can follow the progress of the review here if you would like to.
 # isValidNumber [number]                                : 4          | 4      | 4     | 0   | 3        #
 #                                                                                                      #
 # isValidDate [date]                                    : 4          | 4      | 4     | 0   | 3        #
+# toUTCDateString [date]                                : 4          | 4      | 4     | 0   | 0        #
 #                                                                                                      #
 # toPromise [promise]                                   : 4          | 4      | 4     | 0   | 0        #
 #                                                                                                      #

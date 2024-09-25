@@ -4,6 +4,7 @@ const isInitialized = require("./src/core/isInitialized");
 const isValidNumber = require("./src/number/isValidNumber");
 
 const isValidDate = require("./src/date/isValidDate");
+const toUTCDateString = require("./src/date/toUTCDateString");
 
 const toPromise = require("./src/promise/toPromise");
 
@@ -39,6 +40,7 @@ module.exports = {
     isValidNumber,
 
     isValidDate,
+    toUTCDateString,
 
     toPromise,
 

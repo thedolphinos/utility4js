@@ -28,6 +28,7 @@
     * isInitialized
     * isValidNumber
     * isValidDate
+    * toUTCDateString
     * toPromise
     * assignIfExist
     * isValidEnum
