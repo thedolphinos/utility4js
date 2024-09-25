@@ -1,0 +1,46 @@
+Before the release of version 1.0.0, we decided to review Cell from scratch.
+You can follow the progress of the review here if you would like to.
+
+########################################################################################################
+# Module                                                | Guidelines | README | Code | Test | Examples #
+# ---------------------------------------------------------------------------------------------------- #
+# isExist [core]                                        : 4          | 4      | 4     | 0   | 3        #
+# isInitialized [core]                                  : 4          | 4      | 4     | 0   | 3        #
+#                                                                                                      #
+# isValidNumber [number]                                : 4          | 4      | 4     | 0   | 3        #
+#                                                                                                      #
+# isValidDate [date]                                    : 4          | 4      | 4     | 0   | 3        #
+#                                                                                                      #
+# toPromise [promise]                                   : 4          | 4      | 4     | 0   | 0        #
+#                                                                                                      #
+# assignIfExist [object]                                : 4          | 4      | 4     | 0   | 0        #
+#                                                                                                      #
+# isValidEnum [enum]                                    : 4          | 4      | 4     | 0   | 3        #
+# isValidEnumValue [enum]                               : 4          | 4      | 4     | 0   | 3        #
+# toEnum [enum]                                         : 4          | 4      | 4     | 0   | 0        #
+#                                                                                                      #
+# traverseRequireExecuteDeep [file]                     : 4          | 4      | 4     | 0   | 0        #
+#                                                                                                      #
+# isObjectId [db]                                       : 4          | 4      | 4     | 0   | 0        #
+# isValidId [db]                                        : 4          | 4      | 4     | 0   | 0        #
+# isSameIds [db]                                        : 4          | 4      | 4     | 0   | 0        #
+# toObjectId [db]                                       : 4          | 4      | 4     | 0   | 0        #
+#                                                                                                      #
+# init [variable]                                       : 4          | 4      | 4     | 0   | 0        #
+# removePropertiesDeeply [variable]                     : 4          | 4      | 4     | 0   | 0        #
+# removePropertiesFromObjectDeeply [variable]           : 4          | 4      | 4     | 0   | 0        #
+# removePropertiesFromArrayDeeply [variable]            : 4          | 4      | 4     | 0   | 0        #
+# removeNotExistedPropertiesDeeply [variable]           : 4          | 4      | 4     | 0   | 0        #
+# removeNotExistedPropertiesFromObjectDeeply [variable] : 4          | 4      | 4     | 0   | 0        #
+# removeNotExistedPropertiesFromArrayDeeply [variable]  : 4          | 4      | 4     | 0   | 0        #
+########################################################################################################
+
+#####################################
+# Status Legend                     #
+# --------------------------------- #
+# Not Started                   : 0 #
+# In Progress                   : 1 #
+# Completed with TODOs          : 2 #
+# Completed but needs more work : 3 #
+# Completed                     : 4 #
+#####################################

@@ -1,65 +1,65 @@
-const isExist = require("./lib/core/isExist");
-const isInitialized = require("./lib/core/isInitialized");
+const isExist = require("./src/core/isExist");
+const isInitialized = require("./src/core/isInitialized");
 
-const isValidNumber = require("./lib/number/isValidNumber");
+const isValidNumber = require("./src/number/isValidNumber");
 
-const isValidDate = require("./lib/date/isValidDate");
+const isValidDate = require("./src/date/isValidDate");
 
-const toPromise = require("./lib/promise/toPromise");
+const toPromise = require("./src/promise/toPromise");
 
-const assignIfExist = require("./lib/object/assignIfExist");
+const assignIfExist = require("./src/object/assignIfExist");
 
-const isValidEnumDefinition = require("./lib/enum/isValidEnumDefinition");
-const isValidEnumValue = require("./lib/enum/isValidEnumValue");
-const toEnum = require("./lib/enum/toEnum");
+const isValidEnum = require("./src/enum/isValidEnum");
+const isValidEnumValue = require("./src/enum/isValidEnumValue");
+const toEnum = require("./src/enum/toEnum");
 
-const traverseRequireExecuteDeep = require("./lib/file/traverseRequireExecuteDeep");
+const traverseRequireExecuteDeep = require("./src/file/traverseRequireExecuteDeep");
 
-const isObjectId = require("./lib/db/isObjectId");
-const isValidId = require("./lib/db/isValidId");
-const isSameIds = require("./lib/db/isSameIds");
-const toObjectId = require("./lib/db/toObjectId");
+const isObjectId = require("./src/db/isObjectId");
+const isValidId = require("./src/db/isValidId");
+const isSameIds = require("./src/db/isSameIds");
+const toObjectId = require("./src/db/toObjectId");
 
-const init = require("./lib/variable/init");
+const init = require("./src/variable/init");
 const {
-  removePropertiesDeeply,
-  removePropertiesFromObjectDeeply,
-  removePropertiesFromArrayDeeply
-} = require("./lib/variable/removeProperties");
+    removePropertiesDeeply,
+    removePropertiesFromObjectDeeply,
+    removePropertiesFromArrayDeeply
+} = require("./src/variable/removeProperties");
 const {
-  removeNotExistedPropertiesDeeply,
-  removeNotExistedPropertiesFromObjectDeeply,
-  removeNotExistedPropertiesFromArrayDeeply
-} = require("./lib/variable/removeNotExistedProperties");
+    removeNotExistedPropertiesDeeply,
+    removeNotExistedPropertiesFromObjectDeeply,
+    removeNotExistedPropertiesFromArrayDeeply
+} = require("./src/variable/removeNotExistedProperties");
 
 module.exports = {
-  isExist,
-  isInitialized,
+    isExist,
+    isInitialized,
 
-  isValidNumber,
+    isValidNumber,
 
-  isValidDate,
+    isValidDate,
 
-  toPromise,
+    toPromise,
 
-  assignIfExist,
+    assignIfExist,
 
-  isValidEnumDefinition,
-  isValidEnumValue,
-  toEnum,
+    isValidEnum,
+    isValidEnumValue,
+    toEnum,
 
-  traverseRequireExecuteDeep,
+    traverseRequireExecuteDeep,
 
-  isObjectId,
-  isValidId,
-  isSameIds,
-  toObjectId,
+    isObjectId,
+    isValidId,
+    isSameIds,
+    toObjectId,
 
-  init,
-  removePropertiesDeeply,
-  removePropertiesFromObjectDeeply,
-  removePropertiesFromArrayDeeply,
-  removeNotExistedPropertiesDeeply,
-  removeNotExistedPropertiesFromObjectDeeply,
-  removeNotExistedPropertiesFromArrayDeeply
+    init,
+    removePropertiesDeeply,
+    removePropertiesFromObjectDeeply,
+    removePropertiesFromArrayDeeply,
+    removeNotExistedPropertiesDeeply,
+    removeNotExistedPropertiesFromObjectDeeply,
+    removeNotExistedPropertiesFromArrayDeeply
 };
