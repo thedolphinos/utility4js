@@ -10,6 +10,7 @@ const isExist = require("../core/isExist");
  * @param {Object} sourceObject - The source object from which the `properties` are copied.
  * @param {Object} targetObject - The target object to which the `properties` are copied.
  * @param {Array<string>} properties - An array of property names to check in the `sourceObject` and assign to the `targetObject` if they exist.
+ * @returns {void}
  *
  * @throws {Error} - Throws an error if:
  *                     * The `sourceObject` or `targetObject` is not a plain object.

@@ -10,6 +10,7 @@ const isExist = require("../core/isExist");
  *
  * @param {string} directoryPath - The path to the directory that will be traversed.
  * @param {Function} [function_] - A function to execute with the exports of each imported file. If not provided, the files will be imported without any further action.
+ * @returns {void}
  *
  * @throws {Error} - Throws an error if the `directoryPath` is not a string or if `function_` is provided but is not a function.
  * @throws {Error} - Throws an error if a directory does not exist on the `directoryPath`.

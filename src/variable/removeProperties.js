@@ -9,6 +9,7 @@ const isExist = require("../core/isExist");
  * @param {*} x - The value to modify by removing properties.
  * @param {Function} checkIsRemovable - A function that checks whether a property should be removed. It must return a boolean value (`true` for removable).
  * @param {*} [parent] - The parent property of the current property used for recursive calls.
+ * @returns {void}
  *
  * @throws {Error} - Throws an error if `checkIsRemovable` is not a function.
  */
@@ -41,6 +42,7 @@ const removePropertiesDeeply = (x, checkIsRemovable, parent = undefined) =>
  * @param {Array} x - The array to modify by removing elements.
  * @param {Function} checkIsRemovable - A function that checks whether a property should be removed. It must return a boolean value (`true` for removable).
  * @param {*} [parent] - The parent property of the current property used for recursive calls.
+ * @returns {void}
  *
  * @throws {Error} - Throws an error if `x` is not an array or `checkIsRemovable` is not a function.
  */
@@ -78,6 +80,7 @@ const removePropertiesFromArrayDeeply = (x, checkIsRemovable, parent = undefined
  * @param {Object} x - The object to modify by removing elements.
  * @param {Function} checkIsRemovable - A function that checks whether a property should be removed. It must return a boolean value (`true` for removable).
  * @param {*} [parent] - The parent property of the current property used for recursive calls.
+ * @returns {void}
  *
  * @throws {Error} - Throws an error if `x` is not a plain object or `checkIsRemovable` is not a function.
  */

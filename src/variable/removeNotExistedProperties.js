@@ -10,6 +10,7 @@ const {
  * This function modifies the given value in place and does not return a value.
  *
  * @param {*} x - The value from which non-existent properties should be removed.
+ * @returns {void}
  */
 const removeNotExistedPropertiesDeeply = (x) =>
 {
@@ -32,6 +33,7 @@ const removeNotExistedPropertiesFromArrayDeeply = (x) =>
  * This function modifies the given value in place and does not return a value.
  *
  * @param {Array} x - The object from which non-existent properties should be removed.
+ * @returns {void}
  */
 const removeNotExistedPropertiesFromObjectDeeply = (x) =>
 {
