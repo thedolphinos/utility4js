@@ -62,8 +62,9 @@
     * Specify the type.
     * Specify if optional.
     * Explain the parameter, starting with a dash.
-* @returns (0 or 1):
+* @returns (1):
     * Specify the type.
+    * If nothing is returned, specify void.
     * Explain the return value, starting with a dash.
 
 (Empty line)
@@ -75,7 +76,7 @@
 
 (Empty line)
 
-* @example:
+* @example (0 or n):
     * No explanation before examples.
     * Examples can span multiple lines.
     * Separate different examples with a new entry.
