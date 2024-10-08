@@ -11,9 +11,9 @@
  * let x;
  * isExist(x); // returns false
  */
-const isExist = (x) =>
+const isExist = <T> (x: T | undefined | null): x is T =>
 {
     return x !== undefined && x !== null;
 };
 
-module.exports = isExist;
+export default isExist;

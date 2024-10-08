@@ -1,4 +1,4 @@
-const {ObjectId} = require("mongodb");
+import {ObjectId} from "mongodb";
 
 /**
  * Checks if the given value is a MongoDB ObjectId.
@@ -6,9 +6,9 @@ const {ObjectId} = require("mongodb");
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is an instance of ObjectId; otherwise, `false`.
  */
-const isObjectId = (x) =>
+const isObjectId = (x: any): boolean =>
 {
     return x instanceof ObjectId;
 };
 
-module.exports = isObjectId;
+export default isObjectId;

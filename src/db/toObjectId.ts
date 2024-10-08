@@ -1,7 +1,7 @@
-const {ObjectId} = require("mongodb");
+import {ObjectId} from "mongodb";
 
-const isObjectId = require("./isObjectId");
-const {isValidId, isInitialized} = require("../../index");
+import isInitialized from "../core/isInitialized";
+import isObjectId from "./isObjectId";
 
 /**
  * Converts the given value to a MongoDB ObjectId.
@@ -12,7 +12,7 @@ const {isValidId, isInitialized} = require("../../index");
  * @throws {Error} - Throws an error if the given value is not initialized.
  * @throws {Error} - Throws an error if the given value cannot be cast to a valid MongoDB ObjectId.
  */
-const toObjectId = (x) =>
+const toObjectId = (x: any): ObjectId =>
 {
     if (!isInitialized(x))
     {
@@ -34,4 +34,4 @@ const toObjectId = (x) =>
     }
 };
 
-module.exports = toObjectId;
+export default toObjectId;

@@ -1,6 +1,6 @@
-const {ObjectId} = require("mongodb");
+import {ObjectId} from "mongodb";
 
-const isObjectId = require("./isObjectId");
+import isObjectId from "./isObjectId";
 
 /**
  * Checks if the given value is a successfully constructed MongoDB ObjectId or can be cast to one.
@@ -8,7 +8,7 @@ const isObjectId = require("./isObjectId");
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is considered a valid MongoDB ObjectId; otherwise, `false`.
  */
-const isValidId = (x) =>
+const isValidId = (x: any): boolean =>
 {
     if (!isObjectId(x))
     {
@@ -21,8 +21,7 @@ const isValidId = (x) =>
             return false;
         }
     }
-
     return true;
 };
 
-module.exports = isValidId;
+export default isValidId;

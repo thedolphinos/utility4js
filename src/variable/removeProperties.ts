@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Recursively removes properties from the given value deeply based on the provided check function.
@@ -13,7 +13,7 @@ const isExist = require("../core/isExist");
  *
  * @throws {Error} - Throws an error if `checkIsRemovable` is not a function.
  */
-const removePropertiesDeeply = (x, checkIsRemovable, parent = undefined) =>
+const removePropertiesDeeply = (x: any, checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {
     if (!_.isFunction(checkIsRemovable))
     {
@@ -46,7 +46,7 @@ const removePropertiesDeeply = (x, checkIsRemovable, parent = undefined) =>
  *
  * @throws {Error} - Throws an error if `x` is not an array or `checkIsRemovable` is not a function.
  */
-const removePropertiesFromArrayDeeply = (x, checkIsRemovable, parent = undefined) =>
+const removePropertiesFromArrayDeeply = (x: any[], checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {
     if (!_.isArray(x) ||
         !_.isFunction(checkIsRemovable))
@@ -84,7 +84,7 @@ const removePropertiesFromArrayDeeply = (x, checkIsRemovable, parent = undefined
  *
  * @throws {Error} - Throws an error if `x` is not a plain object or `checkIsRemovable` is not a function.
  */
-const removePropertiesFromObjectDeeply = (x, checkIsRemovable, parent) =>
+const removePropertiesFromObjectDeeply = (x: {[key: string]: any}, checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {
     if (!_.isPlainObject(x) ||
         !_.isFunction(checkIsRemovable))
@@ -114,7 +114,7 @@ const removePropertiesFromObjectDeeply = (x, checkIsRemovable, parent) =>
     }
 };
 
-module.exports = {
+export {
     removePropertiesDeeply,
     removePropertiesFromObjectDeeply,
     removePropertiesFromArrayDeeply

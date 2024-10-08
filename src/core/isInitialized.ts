@@ -1,7 +1,7 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("./isExist");
-const isValidNumber = require("../number/isValidNumber");
+import isExist from "./isExist";
+import isValidNumber from "../number/isValidNumber";
 
 /**
  * Checks if the given value has a non-empty value.
@@ -31,7 +31,7 @@ const isValidNumber = require("../number/isValidNumber");
  * isInitialized([]); // returns false
  * isInitialized(["x"]); // returns true
  */
-const isInitialized = (x) =>
+const isInitialized = <T> (x: T | undefined | null): x is T =>
 {
     return isExist(x) &&
            (
@@ -42,4 +42,4 @@ const isInitialized = (x) =>
            );
 };
 
-module.exports = isInitialized;
+export default isInitialized;

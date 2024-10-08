@@ -1,4 +1,4 @@
-const _ = require("lodash");
+import _ from "lodash";
 
 /**
  * Converts a callback-based function into a promise-based function.
@@ -9,7 +9,7 @@ const _ = require("lodash");
  *
  * @throws {Error} - Throws an error if the `callbackBasedFunction` is not a function.
  */
-const toPromise = (callbackBasedFunction) =>
+const toPromise = (callbackBasedFunction: (...args: any[]) => void): (...argsOfFunctionExceptCallback: any[]) => Promise<any[]> =>
 {
     if (!_.isFunction(callbackBasedFunction))
     {
@@ -17,11 +17,11 @@ const toPromise = (callbackBasedFunction) =>
     }
 
     // This function must be an arrow function to maintain the correct scope of the `callbackBasedFunction` passed.
-    return (...argsOfFunctionExceptCallback) =>
+    return (...argsOfFunctionExceptCallback: any[]): Promise<any[]> =>
     {
         return new Promise((resolve, reject) =>
                            {
-                               callbackBasedFunction(...argsOfFunctionExceptCallback, (...argsOfCallback) =>
+                               callbackBasedFunction(...argsOfFunctionExceptCallback, (...argsOfCallback: any[]) =>
                                {
                                    resolve(argsOfCallback);
                                });
@@ -29,4 +29,4 @@ const toPromise = (callbackBasedFunction) =>
     };
 };
 
-module.exports = toPromise;
+export default toPromise;

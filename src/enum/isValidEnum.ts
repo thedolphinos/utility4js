@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Checks if the given value is a valid enum definition.
@@ -30,7 +30,7 @@ const isExist = require("../core/isExist");
  *     "BLACK_HAT": 2
  * });
  */
-const isValidEnum = (x) =>
+const isValidEnum = (x: {[key: string]: any}): boolean =>
 {
     if (!isExist(x) || !_.isPlainObject(x))
     {
@@ -62,4 +62,4 @@ const isValidEnum = (x) =>
     return true;
 };
 
-module.exports = isValidEnum;
+export default isValidEnum;

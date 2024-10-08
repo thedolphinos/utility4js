@@ -1,9 +1,9 @@
-const path = require("node:path");
-const fs = require("node:fs");
+import path from "node:path";
+import fs from "node:fs";
 
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Recursively traverses the given directory path deeply, imports JavaScript files found within, and if a function is provided, executes it with the exports of each imported file.
@@ -16,7 +16,7 @@ const isExist = require("../core/isExist");
  * @throws {Error} - Throws an error if a directory does not exist on the `directoryPath`.
  * @throws {Error} - Throws an error if any file in the directory or its subdirectories cannot be accessed due to insufficient permissions.
  */
-const traverseRequireExecuteDeep = (directoryPath, function_ = undefined) =>
+const traverseRequireExecuteDeep = (directoryPath: string, function_?: (exports: any) => void): void =>
 {
     if (!_.isString(directoryPath) ||
         (isExist(function_) && !_.isFunction(function_)))
@@ -64,4 +64,4 @@ const traverseRequireExecuteDeep = (directoryPath, function_ = undefined) =>
     }
 };
 
-module.exports = traverseRequireExecuteDeep;
+export default traverseRequireExecuteDeep;

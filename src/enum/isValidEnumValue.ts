@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isValidEnum = require("./isValidEnum");
+import isValidEnum from "./isValidEnum";
 
 /**
  * Checks if the given value is a valid enum value of the `enum_`.
@@ -19,7 +19,7 @@ const isValidEnum = require("./isValidEnum");
  * isValidEnumValue("WHITE_HAT", HACKER_TYPE); // returns true
  * isValidEnumValue("GRAY_HAT", HACKER_TYPE); // returns false
  */
-const isValidEnumValue = (enumValue, enum_) =>
+const isValidEnumValue = (enumValue: string, enum_: {[key: string]: any}): boolean =>
 {
     if (!_.isString(enumValue) ||
         !isValidEnum(enum_))
@@ -27,15 +27,15 @@ const isValidEnumValue = (enumValue, enum_) =>
         throw new Error("Invalid arguments.");
     }
 
-    const validEnumValues = [];
+    const validEnumValues: string[] = [];
 
     for (const enumKey in enum_)
     {
-        const enumValue = enum_[enumKey];
-        validEnumValues.push(enumValue);
+        const value = enum_[enumKey];
+        validEnumValues.push(value);
     }
 
     return validEnumValues.includes(enumValue);
 };
 
-module.exports = isValidEnumValue;
+export default isValidEnumValue;

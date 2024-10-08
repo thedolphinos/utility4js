@@ -1,5 +1,5 @@
-const isExist = require("../core/isExist");
-const isValidNumber = require("../number/isValidNumber");
+import isExist from "../core/isExist";
+import isValidNumber from "../number/isValidNumber";
 
 /**
  * Converts the `timestamp` to a UTC date string in the format "YYYY-MM-DD HH:MM:SS".
@@ -10,7 +10,7 @@ const isValidNumber = require("../number/isValidNumber");
  *
  * @throws {Error} - Throws an error if the `timestamp` is provided and not a finite number primitive.
  */
-const toUTCDateString = (timestamp = undefined) =>
+const toUTCDateString = (timestamp?: number): string =>
 {
     if (isExist(timestamp) && !isValidNumber(timestamp))
     {
@@ -30,4 +30,4 @@ const toUTCDateString = (timestamp = undefined) =>
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 };
 
-module.exports = toUTCDateString;
+export default toUTCDateString;

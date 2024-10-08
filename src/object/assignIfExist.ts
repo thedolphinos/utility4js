@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Copies properties from the `sourceObject` to the `targetObject` if the `properties` exist in the `sourceObject`.
@@ -17,7 +17,7 @@ const isExist = require("../core/isExist");
  *                     * The `properties` is not an array.
  *                     * Any item in the `properties` is not a string.
  */
-const assignIfExist = (sourceObject, targetObject, properties) =>
+const assignIfExist = (sourceObject: {[key: string]: any}, targetObject: {[key: string]: any}, properties: string[]): void =>
 {
     if (!_.isPlainObject(sourceObject) ||
         !_.isPlainObject(targetObject) ||
@@ -45,4 +45,4 @@ const assignIfExist = (sourceObject, targetObject, properties) =>
     }
 };
 
-module.exports = assignIfExist;
+export default assignIfExist;

@@ -1,6 +1,6 @@
-const {ObjectId} = require("mongodb");
+import {ObjectId} from "mongodb";
 
-const isValidId = require("./isValidId");
+import isValidId from "./isValidId";
 
 /**
  * Compares two MongoDB ObjectIds and checks if they are the same.
@@ -11,7 +11,7 @@ const isValidId = require("./isValidId");
  *
  * @throws {Error} - Throws an error if the provided values are not a valid MongoDB ObjectId.
  */
-const isSameIds = (id1, id2) =>
+const isSameIds = (id1: ObjectId | string, id2: ObjectId | string): boolean =>
 {
     if (!isValidId(id1) ||
         !isValidId(id2))
@@ -22,4 +22,4 @@ const isSameIds = (id1, id2) =>
     return id1.toString() === id2.toString();
 };
 
-module.exports = isSameIds;
+export default isSameIds;

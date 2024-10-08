@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Checks if the given value is a finite number primitive.
@@ -15,9 +15,9 @@ const isExist = require("../core/isExist");
  * isValidNumber(Infinity); // returns false
  * isValidNumber(NaN); // returns false
  */
-const isValidNumber = (x) =>
+const isValidNumber = (x: any): boolean =>
 {
     return isExist(x) && _.isFinite(x);
 };
 
-module.exports = isValidNumber;
+export default isValidNumber;

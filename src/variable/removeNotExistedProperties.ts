@@ -1,9 +1,9 @@
-const isExist = require("../core/isExist");
-const {
+import isExist from "../core/isExist";
+import {
     removePropertiesDeeply,
     removePropertiesFromObjectDeeply,
     removePropertiesFromArrayDeeply
-} = require("./removeProperties");
+} from "./removeProperties";
 
 /**
  * Removes properties that do not exist from the given value deeply.
@@ -12,7 +12,7 @@ const {
  * @param {*} x - The value from which non-existent properties should be removed.
  * @returns {void}
  */
-const removeNotExistedPropertiesDeeply = (x) =>
+const removeNotExistedPropertiesDeeply = (x: any): void =>
 {
     removePropertiesDeeply(x, (property) => !isExist(property));
 };
@@ -23,7 +23,7 @@ const removeNotExistedPropertiesDeeply = (x) =>
  *
  * @param {Array} x - The array from which non-existent properties should be removed.
  */
-const removeNotExistedPropertiesFromArrayDeeply = (x) =>
+const removeNotExistedPropertiesFromArrayDeeply = (x: any[]): void =>
 {
     removePropertiesFromArrayDeeply(x, (property) => !isExist(property));
 };
@@ -32,15 +32,15 @@ const removeNotExistedPropertiesFromArrayDeeply = (x) =>
  * Removes properties that do not exist from the given object deeply.
  * This function modifies the given value in place and does not return a value.
  *
- * @param {Array} x - The object from which non-existent properties should be removed.
+ * @param {Object} x - The object from which non-existent properties should be removed.
  * @returns {void}
  */
-const removeNotExistedPropertiesFromObjectDeeply = (x) =>
+const removeNotExistedPropertiesFromObjectDeeply = (x: {[key: string]: any}): void =>
 {
     removePropertiesFromObjectDeeply(x, (property) => !isExist(property));
 };
 
-module.exports = {
+export {
     removeNotExistedPropertiesDeeply,
     removeNotExistedPropertiesFromObjectDeeply,
     removeNotExistedPropertiesFromArrayDeeply

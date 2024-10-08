@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const {isExist} = require("../core/isExist");
+import isExist from "../core/isExist";
 
 /**
  * Converts an array of strings into an enum.
@@ -10,7 +10,7 @@ const {isExist} = require("../core/isExist");
  *
  * @throws {Error} - Throws an error if the `x` is not an array of strings with at least 1 element.
  */
-const toEnum = (x) =>
+const toEnum = (x: string[]): {[key: string]: string} =>
 {
     if (!isExist(x) || !_.isArray(x))
     {
@@ -25,7 +25,7 @@ const toEnum = (x) =>
         }
     }
 
-    const enum_ = {};
+    const enum_: {[key: string]: string} = {};
 
     for (const element of x)
     {
@@ -35,4 +35,4 @@ const toEnum = (x) =>
     return enum_;
 };
 
-module.exports = toEnum;
+export default toEnum;

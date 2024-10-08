@@ -1,7 +1,7 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isExist = require("../core/isExist");
-const isValidNumber = require("../number/isValidNumber");
+import isExist from "../core/isExist";
+import isValidNumber from "../number/isValidNumber";
 
 /**
  * Checks if the given value is a date object representing a valid time point.
@@ -13,9 +13,9 @@ const isValidNumber = require("../number/isValidNumber");
  * isValidDate(new Date('November 10 2015')); // returns true
  * isValidDate(new Date('x')); // returns false
  */
-const isValidDate = (x) =>
+const isValidDate = (x: any): boolean =>
 {
     return isExist(x) && _.isDate(x) && isValidNumber(x.getTime());
 };
 
-module.exports = isValidDate;
+export default isValidDate;

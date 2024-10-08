@@ -1,7 +1,7 @@
 {
     "name": "@thedolphinos/utility4js",
-    "version": "0.28.1",
-    "description": "A utility library for JavaScript.",
+    "version": "0.29.0",
+    "description": "A utility library for JavaScript and TypeScript.",
     "keywords": [
         "dolphinos",
         "utility",
@@ -17,16 +17,24 @@
         "Onur Cipe <onur@dolphinos.com>",
         "Selma Cipe <selma@dolphinos.com>"
     ],
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "types/index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/thedolphinos/utility4js.git"
     },
     "scripts": {
-        "start": "node index.js"
+        "build": "tsc",
+        "start": "node dist/index.js"
     },
     "dependencies": {
         "lodash": "^4",
-        "mongodb": "^4"
+        "mongodb": "^6"
+    },
+    "devDependencies": {
+        "@types/express": "^5",
+        "@types/lodash": "^4",
+        "@types/node": "^20",
+        "typescript": "^5"
     }
 }

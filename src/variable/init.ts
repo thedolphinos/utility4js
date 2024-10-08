@@ -1,6 +1,6 @@
-const _ = require("lodash");
+import _ from "lodash";
 
-const isInitialized = require("../core/isInitialized");
+import isInitialized from "../core/isInitialized";
 
 /**
  * Initializes the given value `x` with a value if not already initialized.
@@ -9,7 +9,7 @@ const isInitialized = require("../core/isInitialized");
  * @param {*} value - The value to assign if `x` is not initialized.
  * @returns {*} - Returns either the original `x` if initialized or the provided `value`.
  */
-const init = (x, value) =>
+const init = <T> (x: T, value: T): T =>
 {
     if (!isInitialized(x))
     {
@@ -26,4 +26,4 @@ const init = (x, value) =>
     return x;
 };
 
-module.exports = init;
+export default init;
