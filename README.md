@@ -1,2 +1,2 @@
 # @thedolphinos/utility4js
-A utility library for JavaScript.
+A utility library for JavaScript and TypeScript.
