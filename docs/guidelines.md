@@ -7,7 +7,7 @@
 * File names should be written in camelCase since each represents functions.
 * Example: myFile.js
 
-## Directory
+### Directory
 
 * Directory names should be written in kebab-case.
 * Use lowercase letters.
