@@ -2,18 +2,15 @@
 
 ## Naming
 
+## Naming
+
 ### File
 
-* File names should be written in camelCase since each represents functions.
-* Example: myFile.js
+* camelCase (since they represent function(s))
 
 ### Directory
 
-* Directory names should be written in kebab-case.
-* Use lowercase letters.
-* Words should be separated by hyphens (-).
-* Avoid underscores (_) or camelCase.
-* Example: my-directory
+* kebab-case
 
 ## Imports
 
