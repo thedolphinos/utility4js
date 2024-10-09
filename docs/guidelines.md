@@ -1,18 +1,24 @@
 # Guidelines
 
-## File Name Conventions
+## Naming
 
-* File names should be written in kebab-case.
+### File
+
+* File names should be written in camelCase since each represents functions.
+* Example: myFile.js
+
+## Directory
+
+* Directory names should be written in kebab-case.
 * Use lowercase letters.
 * Words should be separated by hyphens (-).
-* Avoid underscores or camelCase.
-* Example: my-module.js, data-handler.js
-* Directories should follow the same format.
+* Avoid underscores (_) or camelCase.
+* Example: my-directory
 
 ## Imports
 
 * Imports should be ordered by category.
-* Insert an empty line between each category of packages.
+* Insert an empty line before project-specific modules.
 
 ### Import Order by Package Category
 

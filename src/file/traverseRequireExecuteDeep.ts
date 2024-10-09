@@ -1,6 +1,5 @@
 import path from "node:path";
 import fs from "node:fs";
-
 import _ from "lodash";
 
 import isExist from "../core/isExist";
