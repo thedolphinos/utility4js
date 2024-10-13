@@ -13,7 +13,6 @@
 ## Imports
 
 * Imports should be ordered by category.
-* Separate modules with a new line.
 * Separate each category of packages with a new line.
 
 ### Import Order by Package Category
