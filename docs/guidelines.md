@@ -2,8 +2,6 @@
 
 ## Naming
 
-## Naming
-
 ### File
 
 * camelCase (since they represent function(s))
