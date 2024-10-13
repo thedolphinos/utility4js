@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: n/a
+ * Guidelines - Comments: ✓ but work on examples
+ */
+
 import _ from "lodash";
 
 import isValidEnum from "./isValidEnum";
@@ -10,6 +17,7 @@ import isValidEnum from "./isValidEnum";
  * @param {Object} enum_ - The enum which the `enumValue` is to be checked against.
  * @returns {boolean}
  *
+ * TODO: work on examples
  * @example
  * const HACKER_TYPE = {
  *     "WHITE_HAT": "WHITE_HAT",

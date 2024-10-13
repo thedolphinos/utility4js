@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import _ from "lodash";
 
 /**
@@ -8,6 +15,8 @@ import _ from "lodash";
  * @returns {Function} - A new function that returns a promise resolving with the callback's arguments.
  *
  * @throws {Error} - Throws an error if the `callbackBasedFunction` is not a function.
+ *
+ * TODO: add examples
  */
 const toPromise = (callbackBasedFunction: (...args: any[]) => void): (...argsOfFunctionExceptCallback: any[]) => Promise<any[]> =>
 {

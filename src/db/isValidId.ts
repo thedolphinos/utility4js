@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import {ObjectId} from "mongodb";
 
 import isObjectId from "./isObjectId";
@@ -7,6 +14,8 @@ import isObjectId from "./isObjectId";
  *
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is considered a valid MongoDB ObjectId; otherwise, `false`.
+ *
+ * TODO: add examples
  */
 const isValidId = (x: any): boolean =>
 {

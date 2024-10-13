@@ -15,7 +15,7 @@
 ## Imports
 
 * Imports should be ordered by category.
-* Insert an empty line before project-specific modules.
+* Separate modules with a new line.
 
 ### Import Order by Package Category
 

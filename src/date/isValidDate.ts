@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but work on examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -9,6 +16,7 @@ import isValidNumber from "../number/isValidNumber";
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is considered a valid date; otherwise, `false`.
  *
+ * TODO: work on examples
  * @example
  * isValidDate(new Date('November 10 2015')); // returns true
  * isValidDate(new Date('x')); // returns false

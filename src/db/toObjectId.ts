@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import {ObjectId} from "mongodb";
 
 import isInitialized from "../core/isInitialized";
@@ -11,6 +18,8 @@ import isObjectId from "./isObjectId";
  *
  * @throws {Error} - Throws an error if the given value is not initialized.
  * @throws {Error} - Throws an error if the given value cannot be cast to a valid MongoDB ObjectId.
+ *
+ * TODO: add examples
  */
 const toObjectId = (x: any): ObjectId =>
 {

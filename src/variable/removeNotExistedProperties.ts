@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import isExist from "../core/isExist";
 import {
     removePropertiesDeeply,
@@ -11,6 +18,8 @@ import {
  *
  * @param {*} x - The value from which non-existent properties should be removed.
  * @returns {void}
+ *
+ * TODO: add examples
  */
 const removeNotExistedPropertiesDeeply = (x: any): void =>
 {
@@ -22,6 +31,9 @@ const removeNotExistedPropertiesDeeply = (x: any): void =>
  * This function modifies the given value in place and does not return a value.
  *
  * @param {Array} x - The array from which non-existent properties should be removed.
+ * @returns {void}
+ *
+ * TODO: add examples
  */
 const removeNotExistedPropertiesFromArrayDeeply = (x: any[]): void =>
 {
@@ -34,6 +46,8 @@ const removeNotExistedPropertiesFromArrayDeeply = (x: any[]): void =>
  *
  * @param {Object} x - The object from which non-existent properties should be removed.
  * @returns {void}
+ *
+ * TODO: add examples
  */
 const removeNotExistedPropertiesFromObjectDeeply = (x: {[key: string]: any}): void =>
 {

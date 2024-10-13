@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: n/a
+ * Guidelines - Comments: ✓ but work on examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -29,6 +36,8 @@ import isExist from "../core/isExist";
  *     "WHITE_HAT": "WHITE_HAT",
  *     "BLACK_HAT": 2
  * });
+ *
+ * TODO: work on examples
  */
 const isValidEnum = (x: {[key: string]: any}): boolean =>
 {

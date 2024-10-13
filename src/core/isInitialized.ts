@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but work on examples
+ */
+
 import _ from "lodash";
 
 import isExist from "./isExist";
@@ -14,6 +21,7 @@ import isValidNumber from "../number/isValidNumber";
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is considered initialized; otherwise, `false`.
  *
+ * TODO: work on examples
  * @example
  * isInitialized(NaN); // returns false
  * isInitialized(Infinity); // returns false
@@ -36,7 +44,7 @@ const isInitialized = <T> (x: T | undefined | null): x is T =>
     return isExist(x) &&
            (
                (_.isNumber(x) && isValidNumber(x)) ||
-               (_.isString(x) && x.length > 0) ||
+               (_.isString(x) && (x as string).length > 0) ||
                (_.isPlainObject(x) && !_.isEmpty(x)) ||
                (_.isArray(x) && !_.isEmpty(x))
            );

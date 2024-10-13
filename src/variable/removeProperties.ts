@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -12,6 +19,8 @@ import isExist from "../core/isExist";
  * @returns {void}
  *
  * @throws {Error} - Throws an error if `checkIsRemovable` is not a function.
+ *
+ * TODO: add examples
  */
 const removePropertiesDeeply = (x: any, checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {
@@ -45,6 +54,8 @@ const removePropertiesDeeply = (x: any, checkIsRemovable: (property: any) => boo
  * @returns {void}
  *
  * @throws {Error} - Throws an error if `x` is not an array or `checkIsRemovable` is not a function.
+ *
+ * TODO: add examples
  */
 const removePropertiesFromArrayDeeply = (x: any[], checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {
@@ -83,6 +94,8 @@ const removePropertiesFromArrayDeeply = (x: any[], checkIsRemovable: (property: 
  * @returns {void}
  *
  * @throws {Error} - Throws an error if `x` is not a plain object or `checkIsRemovable` is not a function.
+ *
+ * TODO: add examples
  */
 const removePropertiesFromObjectDeeply = (x: {[key: string]: any}, checkIsRemovable: (property: any) => boolean, parent?: any): void =>
 {

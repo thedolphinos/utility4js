@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -16,6 +23,8 @@ import isExist from "../core/isExist";
  *                     * The `sourceObject` or `targetObject` is not a plain object.
  *                     * The `properties` is not an array.
  *                     * Any item in the `properties` is not a string.
+ *
+ * TODO: add examples
  */
 const assignIfExist = (sourceObject: {[key: string]: any}, targetObject: {[key: string]: any}, properties: string[]): void =>
 {

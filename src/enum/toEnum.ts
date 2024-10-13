@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -9,6 +16,8 @@ import isExist from "../core/isExist";
  * @returns {Object} - An object where each string in the array becomes a key-value pair.
  *
  * @throws {Error} - Throws an error if the `x` is not an array of strings with at least 1 element.
+ *
+ * TODO: add examples
  */
 const toEnum = (x: string[]): {[key: string]: string} =>
 {

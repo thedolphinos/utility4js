@@ -1,13 +1,21 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but work on examples
+ */
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
 
 /**
- * Checks if the given value is a finite number primitive.
+ * Checks if the given value is a finite number.
  *
  * @param {*} x - The value to check.
  * @returns {boolean} - Returns `true` if the value is considered a valid number; otherwise, `false`.
  *
+ * TODO: work on examples
  * @example
  * isValidNumber(7); // returns true
  * isValidNumber(new Number(2)); // returns true

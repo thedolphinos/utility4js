@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import {ObjectId} from "mongodb";
 
 import isValidId from "./isValidId";
@@ -10,6 +17,8 @@ import isValidId from "./isValidId";
  * @returns {boolean} - Returns `true` if the two MongoDB ObjectIds are the same; otherwise, `false`.
  *
  * @throws {Error} - Throws an error if the provided values are not a valid MongoDB ObjectId.
+ *
+ * TODO: add examples
  */
 const isSameIds = (id1: ObjectId | string, id2: ObjectId | string): boolean =>
 {

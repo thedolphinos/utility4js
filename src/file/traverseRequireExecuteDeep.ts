@@ -1,5 +1,13 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import path from "node:path";
 import fs from "node:fs";
+
 import _ from "lodash";
 
 import isExist from "../core/isExist";
@@ -14,6 +22,8 @@ import isExist from "../core/isExist";
  * @throws {Error} - Throws an error if the `directoryPath` is not a string or if `function_` is provided but is not a function.
  * @throws {Error} - Throws an error if a directory does not exist on the `directoryPath`.
  * @throws {Error} - Throws an error if any file in the directory or its subdirectories cannot be accessed due to insufficient permissions.
+ *
+ * TODO: add examples
  */
 const traverseRequireExecuteDeep = (directoryPath: string, function_?: (exports: any) => void): void =>
 {

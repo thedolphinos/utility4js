@@ -1,3 +1,10 @@
+/*
+ * Code Review: ✓
+ * Test Cases: ✗
+ * Guidelines - Imports: ✓
+ * Guidelines - Comments: ✓ but no examples
+ */
+
 import isExist from "../core/isExist";
 import isValidNumber from "../number/isValidNumber";
 
@@ -9,6 +16,8 @@ import isValidNumber from "../number/isValidNumber";
  * @returns {string} - A formatted UTC date string in "YYYY-MM-DD HH:MM:SS" format.
  *
  * @throws {Error} - Throws an error if the `timestamp` is provided and not a finite number primitive.
+ *
+ * TODO: add examples
  */
 const toUTCDateString = (timestamp?: number): string =>
 {
