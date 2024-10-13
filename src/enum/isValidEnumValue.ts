@@ -1,7 +1,7 @@
 /*
  * Code Review: ✓
  * Test Cases: ✗
- * Guidelines - Imports: n/a
+ * Guidelines - Imports: ✓
  * Guidelines - Comments: ✓ but work on examples
  */
 
