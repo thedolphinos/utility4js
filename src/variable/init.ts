@@ -18,7 +18,8 @@ import isInitialized from "../core/isInitialized";
  *
  * TODO: add examples
  */
-const init = <T> (x: T, value: T): T =>
+
+const init = <T> (x: T | undefined, value: T): T =>
 {
     if (!isInitialized(x))
     {
