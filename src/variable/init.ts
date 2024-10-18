@@ -33,7 +33,7 @@ const init = <T> (x: T | undefined, value: T): T =>
         }
     }
 
-    return x;
+    return x!;
 };
 
 export default init;
